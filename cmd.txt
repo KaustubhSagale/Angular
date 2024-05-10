@@ -1,0 +1,5 @@
+npm i
+npm i @angular/core
+ng serve
+npm install -g @angular/cli@latest
+ng new part-c/// create project
