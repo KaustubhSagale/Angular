@@ -1,0 +1,28 @@
+<div
+  style="max-width: 400px; margin: 0 auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+  <h1 style="text-align: center;">{{title}}</h1>
+  <input type="text"
+    style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;"
+    #name placeholder="Enter your Name" name="Name"><br>
+  <input type="text"
+    style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;"
+    #address placeholder="Enter your Address" name="Address"><br>
+  <input type="text"
+    style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;"
+    #contact placeholder="Enter your contact" name="Contact"><br>
+  <input type="email"
+    style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;"
+    #email placeholder="Enter your Email" name="Email"><br>
+  <input type="password"
+    style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;"
+    #password placeholder="Enter your password" name="Password"><br>
+  <button
+    style="width: 100%; padding: 10px; background-color: #007bff; color: #fff; border: none; border-radius: 4px; cursor: pointer;"
+    (click)="getValue(name.value,address.value,contact.value,email.value)">Register</button>
+
+  <h1 style="text-align: center;">Your Registered data</h1>
+  <p style="margin-bottom: 5px;">Name: {{displayName}}</p>
+  <p style="margin-bottom: 5px;">Address: {{displayAddress}}</p>
+  <p style="margin-bottom: 5px;">Contact: {{displayContact}}</p>
+  <p style="margin-bottom: 5px;">Email: {{displayEmail}}</p>
+</div>
